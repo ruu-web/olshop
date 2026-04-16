@@ -1,0 +1,361 @@
+
+body {
+            padding: 20px 10px;
+            font-family: 'Poppins', sans-serif;
+            background: #f0f8ff;
+            color: #333;
+        }
+         :root {
+            --main-color: #1E90FF;
+        }
+        
+header {
+            text-align: left;
+            padding: 0;
+            position:absolute;
+            width: 100%;
+            left:0px;
+        }
+        .header-box {
+            position: fixed;
+            width:100%;
+            z-index: 1;
+            background:var(--main-color);
+    
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 60px;
+            border-radius:0px 0px 0px 0px;
+            color: #fff;
+            text-align: left;
+            
+        }
+        .header-box img {
+            margin-left:15px;
+            margin-top:10px;
+            width:40px;
+        }
+        .header-box h4{
+            margin-left:70px;
+            position:absolute;
+            font-size:16px;
+            top:17px;
+        }
+        .transaction-card {
+            display: flex;
+            position:relative;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            padding-left:60px;
+            margin-bottom: 10px;
+      background:#fff;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .transaction-card:hover {
+            background: #f9f9f9;
+        }
+
+        .transaction-card img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+position:absolute;
+top:15px; left:15px;
+        }
+
+        .transaction-details {
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .transaction-details strong {
+            font-size: 16px;
+            color: black;
+font-weight:600;
+padding-right:80px;
+            display: block;
+            margin-bottom: 0px;
+        }
+
+        .transaction-details font {
+            font-size: 12px;
+            color: #000;
+            margin-top:-5px
+        }
+
+        .transaction-status {
+            min-width: 80px;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 10px;
+            font-weight: bold;
+position:absolute;
+right:15px;
+top:20px;
+color: blue;
+        }
+
+        .transaction-status.green {
+            color: #00c000;
+border:1.5px solid #00c000;
+            background-color: #fff;
+        }
+
+        .transaction-status.red {
+            color: red;
+border:1.5px solid red;
+            background-color: #fff;
+        }
+
+        .transaction-status.orange {
+            color: #ffc000;
+border:1.5px solid #ffc000;
+            background-color: #fff;
+        }
+
+        .transaction-status.gray {
+            background-color: #fff;
+            color: #777;
+border:1.5px solid #777;
+        }
+
+        .no-transactions {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            position: relative;
+            /* Hilangkan posisi fixed */
+          }
+        .pagination-controls button {
+            margin-left: 10px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            background: #1E90FF;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 15px;
+        }
+        .pagination-controls button:hover{
+            background:#000;
+            outline:none;
+        }
+        
+
+        .pagination-buttons button:hover:not(:disabled) {
+            background: #000;
+        }
+                .summary-tabs {
+          display: flex;
+          justify-content: space-around;
+          padding: 15px 0;
+          background-color: #ffffff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-tab {
+          width: 30%;
+          text-align: center;
+          background-color: #1E90FF;
+          border: 1px solid #ddd;
+          border-radius: 15px;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+            .summary-tabdul {
+          width: 30%;
+          text-align: center;
+          color : black ;
+          background-color: #1E90FF ;
+          border: 1px solid #ddd;
+          border-radius: 15px;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+             .summary-tabdel {
+          width: 30%;
+          text-align: center;
+          color : white ;
+          background-color: #1E90FF;
+          border: 1px solid #ddd;
+          border-radius: 15px;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }   
+
+        .summary-tab .tab-title {
+          font-size: 11px;
+          
+          
+          font-weight: bold;
+          color: white;
+          margin-bottom: 5px;
+        }
+    .summary-tabdul .tab-title {
+    font-size: 11px;
+
+
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+  }      
+  .summary-tabdel .tab-title {
+    font-size: 12px;
+
+
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+        .summary-tab .tab-value {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+        }
+.summary-tabdel .tab-value {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+        }
+            .summary-tabdul .tab-value {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+        }    
+                .tab-navigation-container {
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 10px 20px;
+        }
+
+        .tab-navigation {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tab-navigation .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #1E90FF;
+            border-radius: 8px;
+        }
+        
+
+        .tab-navigation .tab.active {
+            color: white;
+            background-color: #1E90FF;
+        }
+
+        .filter-container {
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .transaction-list {
+            padding: 20px;
+            margin-top: -40px;
+        }
+
+        .transaction-date {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        .transaction-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* Make the entire item clickable */
+        }
+
+        .transaction-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .transaction-details {
+            flex: 1;
+        }
+
+        .transaction-details .amount {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .transaction-details .status {
+            font-size: 12px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .transaction-status {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745;
+            padding: 5px 10px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 70px;
+        }
+
+        .transaction-status.failed {
+            background-color: red;
+        }
+
+        .transaction-status.pending {
+            background-color: yellow;
+            color: black;
+        }
+        a {
+        text-decoration: none; /* Hilangkan garis bawah */
+        color: inherit; /* Gunakan warna default teks */
+    }
+
+    a:hover {
+        text-decoration: none; /* Hilangkan garis bawah saat hover */
+    }
+    .transaction-details div:nth-child(2) {
+    font-size: 12px; /* Ubah ukuran teks */
+    color: #666; /* Opsional */
+}
+.transaction-status.lunas {
+    font-size: 20px;  /* Ukuran besar */
+    font-weight: bold;
+    color: green;  /* Warna hijau */
+    border: 2px solid green;  /* Border hijau */
+    background-color: #f0fff0; /* Background hijau muda */
+    padding: 8px 15px;
+    border-radius: 10px;
+}
